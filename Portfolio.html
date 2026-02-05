@@ -1,0 +1,140 @@
+<!-- ==============================
+     FILE: index.html
+============================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==============================
+     MAIN HEADER + NAVIGATION
+============================== -->
+<header class="main-header">
+
+    <div class="nav-container">
+        <h1 class="logo">Mhike</h1>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button class="theme-btn" onclick="toggleTheme()">Theme</button>
+    </div>
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        <h2>Hello, I'm</h2>
+        <h1>Mhike Andrei Sumagaysay</h1>
+        <p>Student | Aspiring Code Developer</p>
+
+        <a href="#projects" class="btn-primary">View My Work</a>
+    </div>
+
+</header>
+
+
+<!-- ==============================
+     MAIN CONTENT
+============================== -->
+<main class="container">
+
+    <!-- ABOUT -->
+    <section id="about" class="card about">
+        <h2>About Me</h2>
+
+        <!-- This paragraph describes the user -->
+        <p>
+            Hello! I am <strong>Mhike Andrei</strong>, a passionate learner in
+            <em>web development</em>. I love building clean, responsive, and
+            user-friendly websites.
+        </p>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="card skills">
+        <h2>My Skills</h2>
+
+        <ul>
+            <li>HTML5 & Semantic Layout</li>
+            <li>CSS3 & Animations</li>
+            <li>Responsive Design</li>
+            <li>JavaScript Basics</li>
+            <li>UI / UX Principles</li>
+        </ul>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="card">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+            <div class="project-box">
+                <h3>Portfolio Website</h3>
+                <p>Professional website using HTML & CSS.</p>
+            </div>
+
+            <div class="project-box">
+                <h3>School System</h3>
+                <p>Frontend layout and interface design.</p>
+            </div>
+
+            <div class="project-box">
+                <h3>Game Website</h3>
+                <p>Gaming guides and tutorials platform.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="card contact">
+        <h2>Contact Me</h2>
+
+        <p>Email: <strong>example@email.com</strong></p>
+        <p>Phone: <strong>+63 900 000 0000</strong></p>
+
+        <div class="socials">
+            <a href="#">Facebook</a>
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </section>
+
+</main>
+
+
+<!-- ==============================
+     FOOTER
+============================== -->
+<footer>
+    <p>© 2026 | Designed by <span>Mhike Andrei</span></p>
+</footer>
+
+
+<!-- ==============================
+     JAVASCRIPT
+============================== -->
+<script>
+    function toggleTheme() {
+        document.body.classList.toggle("light");
+    }
+</script>
+
+</body>
+</html>
